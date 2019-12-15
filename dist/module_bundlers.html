@@ -1,4 +1,125 @@
-<!doctype html><html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="description" content="Diccionario web sobre conceptos de desarrollo Front-end"><meta name="author" content="Vanessa Tarí Costa"><title>Module-bundlers</title><link rel="stylesheet" type="text/css" href="style.ba65c417.css"><link rel="stylesheet" type="text/css" href="all.a12a6391.css"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet"><link rel="icon" type="image/png" href="favicon.eadd1163.ico" sizes="32x32"><script src="logo.7f15dac0.js"></script><script src="module_bundlers_potada.ea7b5795.js"></script><script src="parcel.65d9159e.js"></script><script src="webpack.3f067b91.js"></script><script src="browserify.07fa310f.js"></script><script src="rollup.47e6fd1f.js"></script><script src="module_bundler.d34e908c.js"></script></head><body> <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <script src="js.1f2ad6cf.js"></script> <div class="wrapper"> <header> <nav class="header"> <a href="index.html"> <img src="logo.7f15dac0.png" srcset="logo-mobile.16402120.png 320w,logo-tablet.aee82fdd.png 768w,logo-desktop.f0fd79bb.png 1280w" alt="Logo enciclopedia web"> </a> <ul id="menu"> <li><a class="links" id="home" href="index.html">Home</a></li> <li><a class="links active" id="module" href="module_bundlers.html">Module Bundlers</a></li> <li><a class="links" id="prepro" href="preprocesadores.html">Preprocesadores</a></li> </ul> <a href="javascript:void(0);" class="icon" onclick="index.showMenu()"> <i class="fa fa-bars"></i> </a> </nav> <ul class="breadcrumb"> <li><a href="index.html">Home</a></li> <li>Module Bundlers</li> </ul> </header> <div class="container"> <article> <a href="preprocesadores.html"> <img src="module_bundlers_potada.ea7b5795.png" sizes="
+﻿<!doctype html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Diccionario web sobre conceptos de desarrollo Front-end">
+    <meta name="author" content="Vanessa Tarí Costa">
+    <title>Module-bundlers</title>
+    <link rel="stylesheet" type="text/css" href="/style.985d7cce.css">
+    <link rel="stylesheet" type="text/css" href="/all.a5bf7943.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon.26242483.ico" sizes="32x32">
+
+
+
+<script src="/logo.fb412750.js"></script><script src="/module_bundlers_potada.7e0c486d.js"></script><script src="/parcel.8bc44f32.js"></script><script src="/webpack.469defa2.js"></script><script src="/browserify.420ea8c1.js"></script><script src="/rollup.e07c3b8d.js"></script><script src="/module_bundler.406c3b1c.js"></script></head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="/js.5c615dc2.js"></script>
+
+    <div class="wrapper">
+        <header>
+
+            <nav class="header">
+                <a href="/index.html">
+                    <img src="/logo.fb412750.png" srcset="/logo-mobile.95aa7f81.png 320w,/logo-tablet.ecd5a9cc.png 768w,/logo-desktop.f0c98ee5.png 1280w" alt="Logo enciclopedia web">
+
+                </a>
+
+                <ul id="menu">
+                    <li><a class="links" href="/index.html">Home</a></li>
+                    <li><a class="links active" href="/module_bundlers.html">Module Bundlers</a></li>
+                    <li><a class="links" href="/preprocesadores.html">Preprocesadores</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="index.showMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+            <ul class="breadcrumb">
+                <li><a href="/index.html">Home</a></li>
+                <li>Module Bundlers</li>
+            </ul>
+        </header>
+        <div class="container">
+            <article>
+                    <a href="/preprocesadores.html">
+                        <img src="/module_bundlers_potada.7e0c486d.png" sizes="
                                 (max-width: 20em) 30vw,
                                 (max-width: 30em) 60vw,
-                                (max-width: 40em) 90vw" alt="Module Bundlers"> </a> <h2 class="title">Module Bundlers</h2> <p> Un module bundlers es una herramienta que coge distintos ficheros (png, js, css) y sus dependencias y las agrupa en un solo archivo, generalmente para usar en el navegador. Por lo general, comienza con un archivo de entrada, y desde allí agrupa todo el código necesario para ese archivo de entrada. Existen distintas herramientas de este tipo: </p> <ul class="list-group"> <li class="list-group-item"> <img src="parcel.65d9159e.png" class="thumbnail rotacion" alt="Parcel"> Parcel</li> <li class="list-group-item"> <img src="webpack.3f067b91.png" class="thumbnail rotacion" alt="Webpack"> <a href="webpack.html">Webpack</a></li> <li class="list-group-item"> <img src="browserify.07fa310f.png" class="thumbnail rotacion" alt="Browserify"> Browserify</li> <li class="list-group-item"> <img src="rollup.47e6fd1f.png" class="thumbnail rotacion" alt="Rollup"> Rollup</li> </ul> <p> Hay dos etapas principales de un paquete: </p> <ol> <li>Resolución de la dependencia</li> <li>Empaquetado</li> </ol> <p> Comenzando desde un punto de entrada tal como se ve en la imagen es app.js, el objetivo de la resolución de dependencias es buscar todas las dependencias de su código (otras partes de código que necesita para funcionar) y construir un gráfico (llamado gráfico de dependencia). </p> <p> Una vez hecho esto, puede empaquetar o convertir su gráfico de dependencia en un solo archivo que la aplicación pueda usar. </p> <img src="module_bundler.d34e908c.png" class="movimiento" alt="Esquema del empaquetado del module bundler"> </article> </div> <footer class="footer"> <svg baseProfile="full" width="200" height="200" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg"><circle cx="100" cy="100" fill="purple" r="50"></circle><polygon points="50 80, 55 100, 70 100, 60 110, 65 125, 50 115, 35 125, 40 110, 30 100, 45 100" fill="#fff"></polygon><text x="100" y="115" font-size="20" text-anchor="middle" fill="#fff">EWeb</text></svg> <div class="text-center"> <small class="copyright">Diseñado <i class="fas fa-heart"></i> por Vanessa Tarí</small> <h4>Enciclopedia web</h4> </div> <img src="narrative.d2533408.jpg" class="ellipse2" alt="Circle 2" width="300" height="300"> </footer>  </div> </body></html>
+                                (max-width: 40em) 90vw" alt="Module Bundlers">
+        
+                    </a>
+                <h2 class="title">Module Bundlers</h2>
+                <p>
+                    Un module bundlers es una herramienta que coge distintos ficheros (png, js, css) y sus dependencias
+                    y las agrupa en un solo archivo,
+                    generalmente para usar en el navegador.
+                    Por lo general, comienza con un archivo de entrada, y desde allí agrupa todo el código necesario
+                    para ese archivo de entrada.
+                    Existen distintas herramientas de este tipo:
+                </p>
+                <ul class="list-group">
+                    <li class="list-group-item ">
+                            <img src="/parcel.8bc44f32.png" class="thumbnail rotacion" alt="Parcel">
+                        Parcel</li>
+                    <li class="list-group-item">
+                        <img src="/webpack.469defa2.png" class="thumbnail rotacion" alt="Webpack">
+                        <a href="/webpack.html">Webpack</a></li>
+                    <li class="list-group-item">
+                            <img src="/browserify.420ea8c1.png" class="thumbnail rotacion" alt="Browserify">
+                        Browserify</li>
+                    <li class="list-group-item">
+                            <img src="/rollup.e07c3b8d.png" class="thumbnail rotacion" alt="Rollup">
+                        Rollup</li>
+                </ul>
+                <p>
+                    Hay dos etapas principales de un paquete:
+                </p>
+                <ol>
+                    <li>Resolución de la dependencia</li>
+                    <li>Empaquetado</li>
+                </ol>
+                <p>
+                    Comenzando desde un punto de entrada tal como se ve en la imagen es app.js,
+                    el objetivo de la resolución de dependencias es buscar todas las dependencias de su código
+                    (otras partes de código que necesita para funcionar) y construir un gráfico (llamado gráfico de
+                    dependencia).
+                </p>
+                <p>
+                    Una vez hecho esto, puede empaquetar o convertir su gráfico de dependencia en un solo archivo que la
+                    aplicación pueda usar.
+                </p>
+                <img src="/module_bundler.406c3b1c.png" class="movimiento" alt="Esquema del empaquetado del module bundler">
+            </article>
+
+        </div>
+        <footer class="footer">
+                <svg version="1.1" baseProfile="full" width="200" height="200" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">                         
+                    <ellipse cx="100" cy="100" rx="50" ry="50" fill="#800080"></ellipse>
+                    <polygon points="50 80, 55 100, 70 100, 60 110, 65 125, 50 115, 35 125, 40 110, 30 100, 45 100" fill="white"></polygon>   
+                    <text x="100" y="115" font-size="20" text-anchor="middle" fill="white">EWeb</text>
+    
+                </svg>
+            <div class="text-center">
+                <small class="copyright">Diseñado <i class="fas fa-heart"></i> por Vanessa Tarí</small>
+                <h4>Enciclopedia web</h4>
+            </div>
+            <img src="/narrative.7714a5af.jpg" class="ellipse2" alt="Circle 2" width="300" height="300">
+
+        </footer>
+        <!--//footer-->
+    </div>
+</body>
+
+</html>
