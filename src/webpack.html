@@ -1,0 +1,239 @@
+﻿<!doctype html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Diccionario web sobre conceptos de desarrollo Front-end">
+    <meta name="author" content="Vanessa Tarí Costa">
+    <title>Diccionario web</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../node_modules/highlight/lib/vendor/highlight.js/styles/default.css">
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./favicon.ico" sizes="32x32">
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../node_modules/highlight/lib/vendor/highlight.js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+    <div class="wrapper">
+        <header>
+
+            <nav class="header">
+                <a href="./index.html" >
+                    <img src="./assets/img/logo.png" srcset="
+                ./assets/img/logo-mobile.png 320w,               
+                ./assets/img/logo-tablet.png 768w,                
+                ./assets/img/logo-desktop.png 1280w"  alt="Logo enciclopedia web">
+
+                </a>
+
+                <ul id="menu">
+                        <li><a class="links active" id="home" href="./index.html">Home</a></li>
+                    <li><a class="links" id="module" href="./module_bundlers.html">Module Bundlers</a></li>
+                    <li><a class="links" id="prepro" href="./preprocesadores.html">Preprocesadores</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <script src="assets/js/index.js"></script>
+            </nav>
+            <ul class="breadcrumb">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./module_bundlers.html">Module Bundlers</a></li>
+                <li>Webpack</li>
+            </ul>
+        </header>
+        <div class="container">
+
+            <article>
+                    <a href="./webpack.html">
+                        <img src="./assets/img/webpack.png"  sizes="
+                                (max-width: 20em) 30vw,
+                                (max-width: 30em) 60vw,
+                                (max-width: 40em) 90vw" alt="Imagen de logo Webpack">
+        
+                    </a>
+                <h2 class="title">Webpack</h2>
+                <p>
+                    En esencia, webpack es un paquete de módulos estáticos para aplicaciones JavaScript modernas. Cuando
+                    webpack procesa su aplicación, internamente
+                    crea un gráfico de dependencia que asigna cada módulo que su proyecto necesita y genera uno o más
+                    paquetes
+
+                </p>
+               <div class="animacion"> <img src="./assets/img/animacion.gif"  alt="Imagen de logo Webpack"></div>
+                   
+    
+             
+                <p>Desde la versión 4.0.0, webpack no requiere un archivo de configuración para agrupar su proyecto</p>
+                <p>Para comenzar, solo necesita comprender sus conceptos básicos :</p>
+
+                <ul>
+                    <li>Entrada</li>
+                    <li>Salida</li>
+                    <li>Cargadores</li>
+                    <li>Complementos</li>
+                    <li>Modo</li>
+                    <li>Compatibilidad del navegador</li>
+                </ul>
+                <h3>Entrada</h3>
+                <p>
+                    Un punto de entrada indica qué módulo webpack debe usar para comenzar
+                    a construir su gráfico de dependencia interna . webpack descubrirá de qué otros módulos
+                    y bibliotecas depende ese punto de entrada (directa e indirectamente).
+                </p>
+                <p>
+                    Se puede especificar un punto de entrada de esta forma:
+                    <p><strong>webpack.config.js</strong></p>
+                    <pre><code class="hljs language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  entry<span class="token punctuation">:</span> <span class="token string">'./path/to/my/entry/file.js'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+
+                    <h3>Salida</h3>
+                    <p>
+                        La propiedad de salida le dice a webpack dónde emitir los paquetes que crea y cómo nombrar estos
+                        archivos. Su valor predeterminado es ./dist/main.jsel archivo de salida principal y la
+                        ./distcarpeta
+                        de cualquier otro archivo generado.
+                    </p>
+                    <p>
+                        Puede configurar esta parte del proceso especificando un outputcampo en su configuración:
+                    </p>
+                    <p> <strong>webpack.config.js</strong></p>
+                    <pre>
+<code class="hljs language-javascript"><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><font></font>
+                module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  entry<span class="token punctuation">:</span> <span class="token string">'./path/to/my/entry/file.js'</span><span class="token punctuation">,</span>
+  output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    path<span class="token punctuation">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'dist'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    filename<span class="token punctuation">:</span> <span class="token string">'my-first-webpack.bundle.js'</span>
+            <span class="token punctuation">}</span>
+<span class="token punctuation">};</span>
+    </code></pre>
+                    <h3>Cargadores</h3>
+                    <p>
+                        webpack solo comprende archivos JavaScript y JSON. Los cargadores permiten que webpack procese
+                        otros
+                        tipos de archivos
+                        y los convierta en módulos válidos que su aplicación pueda consumir y agregar al gráfico de
+                        dependencia.
+                    </p>
+                    <p>Su configuración es la siguiente:</p>
+                    <p> <strong>webpack.config.js</strong></p>
+                    <pre><code class="hljs language-javascript"><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><font></font>
+<font></font>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    filename<span class="token punctuation">:</span> <span class="token string">'my-first-webpack.bundle.js'</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> test<span class="token punctuation">:</span> <span class="token regex">/\.txt$/</span><span class="token punctuation">,</span> use<span class="token punctuation">:</span> <span class="token string">'raw-loader'</span> <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+                    <p>
+                        La configuración anterior ha definido una propiedad del rule para un solo módulo con dos
+                        propiedades
+                        requeridas: test y use. Esto le dice al compilador de webpack lo siguiente:
+                    </p>
+                    <picture>
+                            <source srcset="./assets/img/EstadoDelArte.png" media="(min-width: 1200px)" />
+                            <source srcset="./assets/img/EstadoDelArte-small.png" media="(min-width: 800px)" />
+                            <img src="./assets/img/EstadoDelArte-small.png" />
+                          </picture>
+                    
+                    <blockquote class="blockquote">
+                        <p class="mb-0">
+                            "Oye compilador webpack, cuando te encuentras con una ruta que se resuelve en un archivo
+                            '.txt'
+                            dentro de una declaración require()/ import, usa el raw-loaderpara transformarlo antes de
+                            agregarlo al paquete".
+                        </p>
+                    </blockquote>
+                    <h3>Complementos</h3>
+                    <p>
+                        Si bien los cargadores se utilizan para transformar ciertos tipos de módulos, los complementos
+                        se pueden aprovechar para realizar una gama más amplia de tareas
+                        como la optimización de paquetes, la gestión de activos y la inyección de variables de entorno.
+                    </p>
+                    <p>
+                        Para agregar un complemento debe agregarlo a la matriz de plugins. La mayoría de los
+                        complementos se
+                        pueden personalizar a través de opciones. Como puede usar un complemento varias
+                        veces en una configuración para diferentes propósitos, debe crear una instancia de él llamándolo
+                        con
+                        el newoperador.
+                    </p>
+                    <p> <strong>webpack.config.js</strong></p>
+                    <pre><code class="hljs language-javascript"><span class="token keyword">const</span> HtmlWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'html-webpack-plugin'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//installed via npm</span>
+<span class="token keyword">const</span> webpack <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'webpack'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//to access built-in plugins</span><font></font>
+<font></font>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> test<span class="token punctuation">:</span> <span class="token regex">/\.txt$/</span><span class="token punctuation">,</span> use<span class="token punctuation">:</span> <span class="token string">'raw-loader'</span> <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>template<span class="token punctuation">:</span> <span class="token string">'./src/index.html'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+            <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+                    <h3>Modo</h3>
+                    <p>
+                        Al establecer el parámetro mode en development, production o bien none, uede habilitar las
+                        optimizaciones integradas de webpack que corresponden a cada entorno.
+                        El valor por defecto es production.
+                    </p>
+                    <p> <strong>webpack.config.js</strong></p>
+                    <pre>
+<code class="hljs language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  mode<span class="token punctuation">:</span> <span class="token string">'production'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code>
+</pre>
+                    <h3>Compatibilidad de navegadores</h3>
+                    <p>Webpack es compatible con todos los navegadores que cumplen con ES5 (IE8 y versiones posteriores
+                        no
+                        son compatibles)</p>
+                    <p>Si desea admitir navegadores antiguos, deberá cargar un polyfill antes de usar estas expresiones.
+                    </p>
+            </article>
+
+        </div>
+        <footer class="footer">
+                <svg version="1.1" baseProfile="full" width="200" height="200" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">                         
+                    <ellipse cx="100" cy="100" rx="50" ry="50" fill="#800080"/>
+                    <polygon points="50 80, 55 100, 70 100, 60 110, 65 125, 50 115, 35 125, 40 110, 30 100, 45 100" fill="white"/>   
+                    <text x="100" y="115" font-size="20" text-anchor="middle" fill="white">EWeb</text>
+    
+                </svg>
+            <div class="text-center">
+                <small class="copyright">Diseñado <i class="fas fa-heart"></i> por Vanessa Tarí</small>
+                <h4>Enciclopedia web</h4>
+            </div>
+            <img src="./assets/img/narrative.jpg" class="ellipse2" alt="Circle 2" width="300" height="300">
+
+        </footer>
+        <!--//footer-->
+    </div>
+</body>
+
+</html>
